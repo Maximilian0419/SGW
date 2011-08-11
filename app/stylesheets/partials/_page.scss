@@ -1,0 +1,212 @@
+@import "compass/css3";
+
+//-----------------------------------------------
+// The following html5-boilerplate styles should
+// probably be customized for each site
+//-----------------------------------------------
+
+body, select, input, textarea {
+  color: $font-color;
+  // Set your base font here, to apply evenly
+  // font-family: Georgia, serif;
+}
+
+//Headers (h1, h2, etc) have no default font-size or margin; define those yourself
+h1, h2, h3, h4, h5, h6 {
+  // Bold might not be the best choice if you are
+  // embedding a @font-face that's already bold
+  font-weight: bold;
+}
+
+a, a:active, a:visited { color: $link-color; }
+a:hover { color: $link-hover-color; }
+
+strong, th {
+  font-weight: bold;
+}
+
+small {
+  // Use font-size mixin to convert to percentage for YUI
+  // http://developer.yahoo.com/yui/3/cssfonts/#fontsize
+  @include font-size(11px);  // approx 85% when base-font-size eq 13px
+}
+
+// Add the 'required' attribute on your
+// inputs if you want to use these
+input:valid, textarea:valid {}
+input:invalid, textarea:invalid {
+  @include border-radius(1px);
+  @include single-box-shadow(red, 0, 0, 5px, 0);
+}
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+
+//-----------------------------------
+// Add your own custom styles below
+//-----------------------------------
+
+body {}
+
+#container {}
+
+header {}
+
+#main {}
+
+footer {}
+
+/* cascading style sheet for Shop Green Wheels*/
+
+body{
+  font-size: 12pt;
+  color: #000;
+  text-align: left;
+}
+
+.temp{
+  border-color: #fc00ff;
+}
+
+span.green {
+	color:#00C200;
+}
+
+/* canvas */
+/* canvas */
+/* canvas */
+
+div#canvas {
+  background: #fff;
+	width:1000px;
+	margin: 0px auto;
+	border:1px solid;
+}
+/* header */
+/* header */
+/* header */
+div#header{
+	width:auto;
+	height:130px;
+	background-image:url('background-tan.jpg');
+	background-repeat:repeat-x repeat-y;
+	position: relative;
+}
+
+/* title */
+/* title */
+/* title */
+img#wheel {
+  margin: 15px 0 0 15px;
+}
+
+div#title{
+  position: relative;
+}
+
+div#title h1 {
+  font-family: 'brush script std', 'Helvetica', Arial, sans-serif;
+	position:absolute;
+	top:34px;
+	left:105px;
+	z-index: 300;
+	font-size: 3em;
+}
+	
+/* navigation */
+/* navigation */
+/* navigation */
+
+#navigation {
+	height:30px;
+  border: none;
+  background-image:url('background-tan.jpg');
+	background-repeat:repeat-x repeat-y;
+	position: absolute;
+	z-index: 300;
+	bottom: 0px;
+	right: 0px;
+}
+div#navigation ul{   /*list*/
+	list-style: none; /*no bullets*/
+	margin:0;
+	padding:0;
+}
+div#navigation li{
+	float:left;
+}
+div#navigation li a{
+  display:block;
+  padding-top: 5px;
+  text-align: center;
+  padding-top: 5px;
+	margin: 0px 1px 0px;
+	text-decoration:none;
+	background:#00CC66;
+	color:black;
+	letter-spacing: .1em;
+	padding-bottom: 4px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+div#navigation li a#inventory{
+  width: 100px;
+}
+
+div#navigation li a#about{
+  margin-right: 0;
+  width: 100px;
+}
+
+div#navigation li a#footprint{
+  width: 130px;
+}
+
+div#navigation li a#specials{
+  width: 110px;
+}
+
+div#navigation li:visited{
+	text-decoration:none;
+}
+div#navigation li a:hover{
+	font-weight:bold;
+	background:#28CB25;
+}
+div#navigation li a:active{
+	background:#28CB25;
+	color:black;
+}
+div#navigation li a.selected{
+	border:solid;
+	border-width:0px 0px 2px 0px;
+	border-color:#28CB25;
+	background:#28CB25;
+	font-weight:bold;
+	color: #fff;
+}
+/* content */
+/* content */
+/* content */
+
+#content {
+	min-height:600px;
+	max-height:100%;
+	clear:both;
+	position:relative;
+	border-style:solid;
+	border-width:10px;
+	border-color:#28CB25;
+	padding: 10px;
+}
+
+/* ---------| footer |--------- */
+
+#footer {
+  margin-top: 10px;
+	height:75px;
+	padding: 10px;
+	border-style: solid;
+}
+

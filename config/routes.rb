@@ -1,4 +1,16 @@
 Sgw::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/about"
+
+  get "pages/footprint"
+  
+  match '/about', :to => "pages#about"
+  match '/footprint', :to => "pages#footprint"
+  match '/special', :to => "pages#special"
+  
+  root :to => "pages#home"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -353,12 +353,12 @@ img#wheel {
 }
 
 /* line 103, ../../app/stylesheets/partials/_page.scss */
-div#title {
+#title {
   position: relative;
 }
 
 /* line 107, ../../app/stylesheets/partials/_page.scss */
-div#title h1 {
+#title h1 {
   font-family: 'brush script std', 'Helvetica', Arial, sans-serif;
   position: absolute;
   top: 34px;

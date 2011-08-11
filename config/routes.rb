@@ -7,6 +7,8 @@ Sgw::Application.routes.draw do
   
   match '/about', :to => "pages#about"
   match '/footprint', :to => "pages#footprint"
+  match '/inventory', :to => "pages#inventory"
+  match '/car', :to => "pages#car"
   match '/special', :to => "pages#special"
   
   root :to => "pages#home"

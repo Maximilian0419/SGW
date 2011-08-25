@@ -133,8 +133,8 @@ img#wheel {
 
 #contact {
 	position: absolute;
-	top:10px;
-	left:600px;
+	top:35px;
+	left:632px;
 }
 	
 
@@ -369,3 +369,9 @@ li.stats {
   left: 120px;
 }
 
+#map{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 0;
+}

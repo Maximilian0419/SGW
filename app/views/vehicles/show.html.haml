@@ -1,8 +1,7 @@
-%ul#info
-  %li
-    %h2= "#{@vehicle.year} #{@vehicle.make}, #{@vehicle.model}"
-  %li= @vehicle.milage
-  %li
+#info
+  %h2= "#{@vehicle.year} #{@vehicle.make}, #{@vehicle.model}"
+  %p= @vehicle.milage
+  %p
     %span.price= number_to_currency(@vehicle.price, :precision => 0)
 
 #main

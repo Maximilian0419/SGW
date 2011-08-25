@@ -255,6 +255,7 @@ ul#cars{
 	padding-left: 15px;
 	
 	li{
+	  display: block;
   	border-bottom: 2px solid #EFEFEF;
   	margin-bottom: 20px;
   	height: 160px;
@@ -327,6 +328,10 @@ li.stats {
 #thumbs {
 	margin-left:90px;
 	height:150px;
+	
+	li{
+	  display: block;
+	}
 }
 
 

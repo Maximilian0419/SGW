@@ -1,15 +1,19 @@
-%h1 SPECIAL!!!!
-%ul#info
-  %li
-    %h2= "#{@vehicle.year} #{@vehicle.make}, #{@vehicle.model}"
-  %li= @vehicle.milage
-  %li
-    %span.price= number_to_currency(@vehicle.price, :precision => 0)
+- if @vehicle
 
-#main
-%ul#thumbs
-  %li.thumb
-  %li.thumb
-  %li.thumb
+  %h1 SPECIAL!!!!
+  %ul#info
+    %li
+      %h2= "#{@vehicle.year} #{@vehicle.make}, #{@vehicle.model}"
+    %li= @vehicle.milage
+    %li
+      %span.price= number_to_currency(@vehicle.price, :precision => 0)
 
-%p{:style => "clear: both; margin-top: 40px"}= @vehicle.description
+  #main
+  %ul#thumbs
+    %li.thumb
+    %li.thumb
+    %li.thumb
+
+  %p{:style => "clear: both; margin-top: 40px"}= @vehicle.description
+- else 
+  %h1 No specials at this time.

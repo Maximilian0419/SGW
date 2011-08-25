@@ -7,12 +7,13 @@
     %p Tel: 858-333-2345
     %p 114 N Coast HWY 101
     %p Encinitas CA 92024
-  #admin_info
-    %p
-      Welcome
-      = current_admin.email
-      |
-      = link_to "Sign out", destroy_admin_session_path, :method => :delete
+  - if admin_signed_in?
+    #admin_info
+      %p
+        Welcome
+        = current_admin.email
+        |
+        = link_to "Sign out", destroy_admin_session_path, :method => :delete
   #navigation
     %ul
       - if admin_signed_in?

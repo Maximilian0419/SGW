@@ -169,8 +169,8 @@ img#wheel {
 	color:black;
 	letter-spacing: .1em;
 	padding-bottom: 4px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	@include border-top-left-radius(5px);
+	@include border-top-right-radius(5px);
 }
 
 #navigation li a#inventory{
@@ -222,9 +222,9 @@ img#wheel {
 	border-style:solid;
 	border-width:10px;
 	border-color:#28CB25;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius:20px;
-	border-top-left-radius: 30px;
+	@include border-top-left-radius(25px);
+	@include border-bottom-left-radius(25px);
+	@include border-bottom-right-radius(25px);
 	padding: 10px;
 	background: #fff;
 }

@@ -3,14 +3,17 @@ class VehiclesController < ApplicationController
   before_filter :authenticate_admin!, :only => [:edit, :new, :create, :update, :destroy]
   
   def index
+    @current_tab = "Vehicles"
     @vehicles = Vehicle.all
   end
 
   def show
+    @current_tab = "Vehicles"
     @vehicle = Vehicle.find(params[:id])
   end
   
   def special
+    @current_tab = "Special"
     @vehicle = Vehicle.where(:special => true).last
   end
 

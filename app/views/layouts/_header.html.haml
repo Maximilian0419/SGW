@@ -19,13 +19,13 @@
       - if admin_signed_in?
         %li
           = link_to "Add Vehicle", new_vehicle_path
-      %li#selected
-        = link_to "Inventory", inventory_path
       %li
-        = link_to "Special", special_path
+        = link_to "Inventory", inventory_path, :class => current_tab("Vehicles")
       %li
-        = link_to "Your Footprint", footprint_path
+        = link_to "Special", special_path, :class => current_tab("Special")
       %li
-        = link_to "Eco Links", eco_links_path
+        = link_to "Your Footprint", footprint_path, :class => current_tab("Footprint")
       %li
-        = link_to "About Us", about_path, :class => "selected"
+        = link_to "Eco Links", eco_links_path, :class => current_tab("Eco")
+      %li
+        = link_to "About Us", about_path,:class => current_tab("About")

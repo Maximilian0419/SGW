@@ -1,13 +1,22 @@
 #header
   #title
+    = image_tag("wheel.png", :id => "wheel")
     #wheel
       %h1 Shop Green Wheels
-  
+  #contact
+    %p Tel: 858-333-2345
+    %p 114 N Coast HWY 101
+    %p Encinitas CA 92024
+
   #navigation
     %ul
       %li#selected
-        = link_to "About", about_path
-      %li
         = link_to "Inventory", inventory_path
       %li
+        = link_to "Special", special_path
+      %li
         = link_to "Your Footprint", footprint_path
+      %li
+        = link_to "Eco Links", eco_links_path
+      %li
+        = link_to "About Us", about_path, :class => "selected"

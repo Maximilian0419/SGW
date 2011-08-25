@@ -1,0 +1,20 @@
+%h1 Vehicles
+
+%ul#cars
+  - @vehicles.each do |vehicle|
+    %li
+      
+      - if 1+1 == 90
+        = image_tag(vehicle.image)
+      - else
+        = image_tag("wheel.png", :style => "float: left; margin-right: 20px;")
+      %h2= link_to "#{vehicle.year} #{vehicle.make}, #{vehicle.model}", vehicle
+      %p.milage
+        = vehicle.milage
+        miles
+      %p.stats
+        %span.price
+          = number_to_currency(vehicle.price, :precision => 0)
+          US
+          - if vehicle.special
+            %span{:style => "color:red;"}Special!!!

@@ -58,44 +58,62 @@ footer {}
 
 /* cascading style sheet for Shop Green Wheels*/
 
+/* ----------------------cascading style sheet for Shop Green Wheels---------------------- */
+
 body{
-  font-size: 12pt;
-  color: #000;
-  text-align: left;
+	font-size: 12pt;
+	background-image:url('../images/background-tan.jpg');
+	background-repeat:repeat-x repeat-y;
+	text-align: left;
+}
+
+a{
+	text-decoration:none;
 }
 
 .temp{
-  border-color: #fc00ff;
+  border:3 solid #fc00ff;
 }
 
 span.green {
 	color:#00C200;
 }
 
-/* canvas */
-/* canvas */
-/* canvas */
+.price {
+	font-size:1.5em;
+}
 
-div#canvas {
-  background: #fff;
+.horizontal li{
+	list-style:none;
+	display:inline;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* ----------------------canvas---------------------- */
+
+
+#canvas {
+	background-image:url('background-tan.jpg');
+	background-repeat:repeat-x repeat-y;
 	width:1000px;
 	margin: 0px auto;
-	border:1px solid;
 }
-/* header */
-/* header */
-/* header */
-div#header{
+
+/* ----------------------header---------------------- */
+
+#header{
 	width:auto;
-	height:130px;
+	height:160px;
 	background-image:url('background-tan.jpg');
 	background-repeat:repeat-x repeat-y;
 	position: relative;
 }
 
-/* title */
-/* title */
-/* title */
+/* ----------------------title---------------------- */
+
 img#wheel {
   margin: 15px 0 0 15px;
 }
@@ -108,35 +126,40 @@ img#wheel {
   font-family: 'brush script std', 'Helvetica', Arial, sans-serif;
 	position:absolute;
 	top:34px;
-	left:105px;
+	left:115px;
 	z-index: 300;
-	font-size: 3em;
+	font-size: 3.75em;
+}
+
+#contact {
+	position: absolute;
+	top:10px;
+	left:600px;
 }
 	
-/* navigation */
-/* navigation */
-/* navigation */
+
+/* ----------------------navigation---------------------- */
 
 #navigation {
 	height:30px;
-  border: none;
-  background-image:url('background-tan.jpg');
+	border: none;
+	background-image:url('background-tan.jpg');
 	background-repeat:repeat-x repeat-y;
 	position: absolute;
-	z-index: 300;
 	bottom: 0px;
 	right: 0px;
 }
-div#navigation ul{   /*list*/
+#navigation ul{   /*list*/
 	list-style: none; /*no bullets*/
 	margin:0;
 	padding:0;
 }
-div#navigation li{
+#navigation li{
 	float:left;
 }
-div#navigation li a{
+#navigation li a{
   display:block;
+  width: 140px;
   padding-top: 5px;
   text-align: center;
   padding-top: 5px;
@@ -150,35 +173,38 @@ div#navigation li a{
 	border-top-right-radius: 5px;
 }
 
-div#navigation li a#inventory{
+#navigation li a#inventory{
   width: 100px;
 }
 
-div#navigation li a#about{
+#navigation li a#about{
   margin-right: 0;
-  width: 100px;
+  width: 98px;
 }
 
-div#navigation li a#footprint{
-  width: 130px;
+#navigation li a#footprint{
+  width: 145px;
 }
 
-div#navigation li a#specials{
-  width: 110px;
+#navigation li a#special{
+  width: 112px;
 }
 
-div#navigation li:visited{
+#navigation li a#link{
+	width:113px;
+}
+#navigation li:visited{
 	text-decoration:none;
 }
-div#navigation li a:hover{
+#navigation li a:hover{
 	font-weight:bold;
 	background:#28CB25;
 }
-div#navigation li a:active{
+#navigation li a:active{
 	background:#28CB25;
 	color:black;
 }
-div#navigation li a.selected{
+#navigation li a.selected{
 	border:solid;
 	border-width:0px 0px 2px 0px;
 	border-color:#28CB25;
@@ -186,27 +212,151 @@ div#navigation li a.selected{
 	font-weight:bold;
 	color: #fff;
 }
-/* content */
-/* content */
-/* content */
+
+/* ----------------------content---------------------- */
 
 #content {
 	min-height:600px;
-	max-height:100%;
+	width:960px;
 	clear:both;
-	position:relative;
 	border-style:solid;
 	border-width:10px;
 	border-color:#28CB25;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius:20px;
+	border-top-left-radius: 30px;
 	padding: 10px;
+	background: #fff;
 }
 
-/* ---------| footer |--------- */
+/* ----------------------footer---------------------- */
+
 
 #footer {
-  margin-top: 10px;
+	z-index:1000;
 	height:75px;
 	padding: 10px;
-	border-style: solid;
+	background-image:url('background-tan.jpg');
+	background-repeat:repeat-x repeat-y;
 }
+
+/* ----------------------inventory---------------------- */
+#search {
+	border:3 solid green;
+	position:relative;
+	top:15px;
+	margin-left:25px;
+	margin-bottom:20px;
+}
+
+ul#cars{
+  margin: 0;
+	padding-top: 15px;
+	padding-left: 15px;
+	
+	li{
+  	border-bottom: 2px solid #EFEFEF;
+  	margin-bottom: 20px;
+  	height: 160px;
+  	clear: both;
+  	
+  	.img{
+  	  width: 200px;
+  	  height: 150px;
+  	  background: #efefef;
+    	float: left;
+    	margin-bottom: 10px;
+    	margin-right: 20px;
+    }
+    
+    h2{
+       a{
+         font-weight: 100;
+      	color: green;
+      	font-size: 1.5em;
+      	margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+ul#cars li p{
+	font-size: 1em;
+	margin-bottom: 5px;
+}
+
+li.picture {
+	width:250px;
+	height:250px;
+	margin:20px 50px 5px 35px;
+	padding:30px;
+	border:1 solid green;
+}
+li.stats {
+	width:115px;
+	margin-top:20px;
+}
+#inventory li {
+	border:solid black 1px;
+}
+/* ----------------------special---------------------- */
+
+
+/* ----------------------single---------------------- */
+#main {
+	margin:0px auto;
+	width:350;
+	height:350;
+	border: green 2 solid;
+	padding: 4px;
+	margin-bottom:35px;
+}
+.info {
+	margin-right:200px;
+}
+.thumb {
+	float:left;
+	width:150px;
+	height:150px;
+	border: green 2px solid;
+	padding: 3px;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+#thumbs {
+	margin-left:90px;
+	height:150px;
+}
+
+
+
+
+
+/*-------| Justin CSS |-------*/
+
+.simple_form{
+  
+  div.boolean{
+    padding: 20px 0px;
+    border-bottom: 2px solid #efefef;
+    margin-bottom: 10px;
+  }
+  
+  div.string, div.integer, div.textarea{
+    margin-bottom: 10px;
+    border-bottom: 2px solid #efefef;
+    padding-bottom: 10px;
+    input{
+      padding: 5px;
+    }
+    
+    label{
+      display: block;
+      padding: 5px;
+    }
+  }
+}
+
+
 

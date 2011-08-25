@@ -2,3 +2,10 @@
 db/*.sqlite3
 log/*.log
 tmp/
+
+# Assets
+.sass-cache/
+public/javascripts/cached/
+public/stylesheets/cached/
+public/stylesheets/compiled/
+public/stylesheets/

@@ -1,4 +1,10 @@
 Sgw::Application.routes.draw do
+
+
+  devise_for :admins
+
+  resources :vehicles
+
   get "pages/home"
 
   get "pages/about"
@@ -6,12 +12,13 @@ Sgw::Application.routes.draw do
   get "pages/footprint"
   
   match '/about', :to => "pages#about"
+  match '/eco_links', :to => "pages#eco_links"
   match '/footprint', :to => "pages#footprint"
-  match '/inventory', :to => "pages#inventory"
+  match '/inventory', :to => "vehicles#index"
+  match '/special', :to => "vehicles#special"
   match '/car', :to => "pages#car"
-  match '/special', :to => "pages#special"
   
-  root :to => "pages#home"
+  root :to => "pages#about"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

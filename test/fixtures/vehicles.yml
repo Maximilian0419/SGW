@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  year: 1
+  make: MyString
+  model: MyString
+  milage: 1
+  price: 1
+  description: MyText
+  stock: MyString
+
+two:
+  year: 1
+  make: MyString
+  model: MyString
+  milage: 1
+  price: 1
+  description: MyText
+  stock: MyString

@@ -1,0 +1,14 @@
+= simple_form_for(@vehicle) do |f|
+  = f.error_notification
+
+  .inputs
+    = f.input :year
+    = f.input :special
+    = f.input :make
+    = f.input :model
+    = f.input :milage
+    = f.input :price
+    = f.input :description
+    = f.input :stock
+  .actions
+    = f.button :submit

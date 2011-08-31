@@ -1,14 +1,19 @@
-#info
-  %h2= "#{@vehicle.year} #{@vehicle.make}, #{@vehicle.model}"
-  %p= @vehicle.milage
-  %p
-    %span.price= number_to_currency(@vehicle.price, :precision => 0)
-
+%p{:style => "margin-bottom:5px"}= @vehicle.description
+%p.sgw= image_tag("greenwheels_txt.png")
+%p.phone= @phone
 #main_image
   = image_tag(@vehicle.photo_url(:thumb)) if @vehicle.photo?
+%h2= "#{vehicle.year} #{vehicle.make}, #{vehicle.model}"
+%p.item
+  = vehicle.milage
+  miles
+%p.item
+  = vehicle.mpg
+  MPG
+%span.price
+  = number_to_currency(vehicle.price, :precision => 0)
+  US
 %ul#thumbs
   %li.thumb
   %li.thumb
   %li.thumb
-
-%p{:style => "clear: both; margin-top: 40px"}= @vehicle.description

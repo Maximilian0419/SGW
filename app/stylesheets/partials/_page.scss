@@ -408,3 +408,27 @@ li.stats {
   right: 0px;
   z-index: 0;
 }
+
+.list{
+  
+  li{
+    display: block;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #efefef;
+    margin-bottom: 5px;
+  }
+  span.actions{
+    @include inline-block;
+    float: right;
+    
+    a{
+      @include inline-block;
+      background: #efefef;
+      @include border-radius(15px);
+      padding: 3px 8px;
+      font-size: 12px;
+    }
+  }
+  
+}

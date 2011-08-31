@@ -1,6 +1,11 @@
 class VehiclesController < ApplicationController
   
-  before_filter :authenticate_admin!, :only => [:edit, :new, :create, :update, :destroy]
+  before_filter :authenticate_admin!, :only => [:edit, :new, :create, :update, :destroy, :admin]
+  
+  def admin
+    @current_tab = "Vehicles"
+    @vehicles = Vehicle.all
+  end
   
   def index
     @current_tab = "Vehicles"

@@ -5,6 +5,7 @@ class VehiclesController < ApplicationController
   def index
     @current_tab = "Vehicles"
     @vehicles = Vehicle.all
+    @phone = "(858) 333-2345"
   end
 
   def show

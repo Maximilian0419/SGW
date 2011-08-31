@@ -80,7 +80,7 @@ span.green {
 }
 
 .price {
-	font-size:1.5em;
+	font-size:1.3em;
 }
 
 .horizontal li{
@@ -254,9 +254,36 @@ ul#cars{
 	li{
 	  display: block;
   	border-bottom: 2px solid #EFEFEF;
+  	padding-bottom: 45px;
   	margin-bottom: 20px;
-  	height: 160px;
   	clear: both;
+  	@include pie-clearfix;
+  	
+  	p{
+  	  float: left;
+  	  
+  	  &.item{
+  	    padding-right: 10px;
+  	    padding-left: 10px;
+  	  }
+  	  
+  	  &.phone{
+  	    float: right;
+  	  }
+  	  
+  	}
+  	
+  	.price{
+  	  float: right;
+  	  font-size: 18px;
+  	}
+  	
+  	div.photo{
+  	  clear:both;
+  	  background: #efefef;
+  	  text-align: center;
+  	  margin-bottom: 15px;
+  	}
   	
   	.img{
   	  width: 200px;
@@ -268,12 +295,9 @@ ul#cars{
     }
     
     h2{
-       a{
-         font-weight: 100;
-      	color: green;
-      	font-size: 1.5em;
-      	margin-bottom: 5px;
-      }
+      float: left;
+      font-weight: 900;
+      margin-bottom: 5px;	
     }
   }
 }

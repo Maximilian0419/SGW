@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110831022735) do
+ActiveRecord::Schema.define(:version => 20110831062857) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -42,6 +42,17 @@ ActiveRecord::Schema.define(:version => 20110831022735) do
     t.datetime "updated_at"
     t.boolean  "special"
     t.integer  "mpg"
+    t.string   "photo"
+    t.string   "front"
+    t.string   "left"
+    t.string   "right"
+    t.string   "rear"
+    t.string   "interior_left"
+    t.string   "interior_right"
+    t.string   "interior_driver"
+    t.string   "odometer"
+    t.string   "under_hood"
+    t.string   "trunk"
   end
 
 end

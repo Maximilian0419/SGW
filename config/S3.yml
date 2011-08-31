@@ -1,0 +1,14 @@
+development:
+  bucket: SGW-production
+  access_key_id: AKIAJ5ANEODJMW6SS2NA
+  secret_access_key: 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
+
+test:
+  bucket: SGW-production
+  access_key_id: AKIAJ5ANEODJMW6SS2NA
+  secret_access_key: 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
+
+production:
+  bucket: SGW-production
+  access_key_id: AKIAJ5ANEODJMW6SS2NA
+  secret_access_key: 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

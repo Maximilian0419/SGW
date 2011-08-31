@@ -6,8 +6,8 @@
       %p.sgw shopgreenwheels
       %p.phone= @phone
       .photo
-        - if 1+1 == 90
-          = image_tag(vehicle.image)
+        - if vehicle.photo?
+          = link_to image_tag(vehicle.photo_url), vehicle
         - else
           = link_to image_tag("wheel.png", :style => "margin-right: 20px; clear:both;"), vehicle
       %h2= "#{vehicle.year} #{vehicle.make}, #{vehicle.model}"

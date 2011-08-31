@@ -1,8 +1,10 @@
-= simple_form_for(@vehicle) do |f|
+= simple_form_for @vehicle, :html => { :novalidate => 'novalidate', :multipart => true } do |f|
   = f.error_notification
 
   .inputs
     = f.input :year
+    = f.input :photo, :as => :file, :label => 'Main Photo:'
+    = f.input :front, :as => :file, :label => 'Front Photo:'
     = f.input :special
     = f.input :make
     = f.input :model

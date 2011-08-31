@@ -3,22 +3,20 @@
 %ul#cars
   - @vehicles.each do |vehicle|
     %li
-      %p shopgreenwheels :style => "float:left"
-      %p (858) 333 2345 :style => "float:right"
-      - if 1+1 == 90
-        = image_tag(vehicle.image)
-      - else
-        = image_tag("wheel.png", :style => "margin-right: 20px;")
-      %h2= link_to "#{vehicle.year} #{vehicle.make}, #{vehicle.model}", vehicle
-      %p.milage
+      %p.sgw shopgreenwheels
+      %p.phone= @phone
+      .photo
+        - if 1+1 == 90
+          = image_tag(vehicle.image)
+        - else
+          = link_to image_tag("wheel.png", :style => "margin-right: 20px; clear:both;"), vehicle
+      %h2= "#{vehicle.year} #{vehicle.make}, #{vehicle.model}"
+      %p.item
         = vehicle.milage
         miles
-      %p.mpg
+      %p.item
         = vehicle.mpg
         MPG
-      %p.stats
-        %span.price
-          = number_to_currency(vehicle.price, :precision => 0)
-          US
-          - if vehicle.special
-            %span{:style => "color:red;"}Special!!!
+      %span.price
+        = number_to_currency(vehicle.price, :precision => 0)
+        US

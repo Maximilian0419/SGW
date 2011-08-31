@@ -1,0 +1,9 @@
+%h1= pluralize(@vehicles.count, "Vehicle")
+
+%ul.list
+  - @vehicles.each do |vehicle|
+    %li
+      %span.item= "#{vehicle.year} #{vehicle.make}, #{vehicle.model}"
+      %span.actions
+        = link_to 'Edit', edit_vehicle_path(vehicle), :class => "small_button"
+        = link_to 'Delete', vehicle, :confirm => 'Are you sure?', :method => :delete, :class => "small_button"

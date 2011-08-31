@@ -15,6 +15,7 @@ Sgw::Application.routes.draw do
   match '/eco_links', :to => "pages#eco_links"
   match '/footprint', :to => "pages#footprint"
   match '/inventory', :to => "vehicles#index"
+  match '/inventory/admin', :to => "vehicles#admin"
   match '/special', :to => "vehicles#special"
   match '/car', :to => "pages#car"
   

@@ -110,6 +110,18 @@ ul {
 	background-image:url('background-tan.jpg');
 	background-repeat:repeat-x repeat-y;
 	position: relative;
+	
+	#title{
+	  position: absolute;
+	  top: 5px;
+	  left: 5px;
+	}
+
+  #wheel{
+    position: absolute;
+	  top: 35px;
+	  left: 135px;
+  }
 }
 
 /* ----------------------title---------------------- */

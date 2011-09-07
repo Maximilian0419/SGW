@@ -92,6 +92,8 @@ ul {
   margin: 0;
   padding: 0;
 }
+.text p{
+	text-indent:35px;
 /* ----------------------canvas---------------------- */
 
 
@@ -345,8 +347,9 @@ li.stats {
 	padding: 4px;
 	margin-bottom:35px;
 }
-.info {
+ul.info {
 	margin-right:200px;
+	list-style:none;
 }
 .thumb {
 	float:left;
@@ -357,7 +360,6 @@ li.stats {
 	margin-left:50px;
 	margin-right:50px;
 }
-
 #thumbs {
 	margin-left:90px;
 	height:150px;

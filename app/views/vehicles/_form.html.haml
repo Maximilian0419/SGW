@@ -3,9 +3,6 @@
 
   .inputs
     = f.input :year
-    = f.input :photo, :as => :file, :label => 'Main Photo:'
-    = f.input :front, :as => :file, :label => 'Front Photo:'
-    = f.input :special
     = f.input :make
     = f.input :model
     = f.input :milage
@@ -13,5 +10,8 @@
     = f.input :price
     = f.input :description
     = f.input :stock
+    = f.input :special
+    = f.input :photo, :as => :file, :label => 'Main Photo:'
+    = f.input :front, :as => :file, :label => 'Front Photo:'
   .actions
     = f.button :submit
